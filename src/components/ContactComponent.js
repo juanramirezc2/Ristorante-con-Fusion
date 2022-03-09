@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Breadcrumb, BreadcrumbItem, Button,  Label, Col, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { Control, Form, Errors, } from 'react-redux-form';
+import { Control, Form, Errors, LocalForm } from 'react-redux-form';
 
 class Contact  extends Component {
   constructor(props) {
@@ -84,7 +84,7 @@ class Contact  extends Component {
                     className="form-control"
                 />
           </Col>
-        </FormGroup>
+        </Row>
         <Row className="form-group">
           <Label htmlFor="email" md={2}>Email</Label>
           <Col md={10}>
@@ -121,7 +121,7 @@ class Contact  extends Component {
                     className="form-control"
                     />
           </Col>
-        </FormGroup>
+        </Row>
         <Row className="form-group">
           <Col md={{size: 10, offset: 2}}>
             <Button type="submit" value="submit" color="primary">Send Feedback</Button>
